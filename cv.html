@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shinwoo Park | CV</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      line-height: 1.65;
+    }
+
+    .main {
+      padding: 2.5rem 3rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1.2rem;
+      color: #0d6efd;
+    }
+
+    .section h3 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .section p,
+    .section li {
+      font-size: 0.96rem;
+      color: #333;
+    }
+
+    .section ul {
+      padding-left: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    .section li {
+      margin-bottom: 0.8em;
+    }
+
+    .label {
+      font-weight: 600;
+      color: #444;
+    }
+
+    .sidebar h1 {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .main {
+        padding: 1.5rem;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <img src="assets/img/profile.jpg" alt="Profile">
+    <h1>Shinwoo Park</h1>
+    <p>Ph.D. Candidate in AI<br>Yonsei University</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <section class="section">
+      <h2>CV</h2>
+
+      <p><span class="label">Name:</span> Shinwoo Park</p>
+      <p><span class="label">Position:</span> Ph.D. Candidate in Artificial Intelligence</p>
+      <p><span class="label">Affiliation:</span> Yonsei University, Seoul, South Korea</p>
+      <p><span class="label">Expected Graduation:</span> February 2026</p>
+
+      <h3>Research Interests</h3>
+      <p>
+        My research centers on enhancing the safety and transparency of large language models (LLMs) by developing robust methods for detecting LLM-generated content.
+        I have explored both linguistic feature-based detection and watermarking techniques—two complementary approaches that enable accurate and imperceptible attribution of LLM outputs.
+        These methods have been applied to a wide range of content types, including natural language (in both English and Korean) and programming code (in Python, C, C++, and Java), demonstrating strong multilingual and multimodal generalization.
+        Through these experiences, I have cultivated a deep interest in AI safety and AI ethics, particularly in building trustworthy and accountable systems for generative AI.
+      </p>
+
+      <h3>Research Keywords</h3>
+      <p>
+        <span class="label">Core:</span> LLM-Generated Content Detection, Linguistic Feature-Based Detection, LLM Watermarking<br>
+        <span class="label">Related:</span> AI Safety, AI Ethics, LLM Guardrails, Responsible AI
+      </p>
+
+      <h3>Research Summary</h3>
+      <p>
+        My research aims to ensure the safe and responsible use of LLMs by developing reliable methods for detecting LLM-generated content.
+        I pursue two complementary directions: (1) linguistic feature-based detection, which analyzes statistical differences in text patterns between human- and LLM-authored content,
+        and (2) LLM watermarking, which embeds imperceptible but detectable signals during the generation process for post hoc attribution.
+      </p>
+      <p>
+        I apply both methods to natural language and source code, validating across English, Korean, Python, C, C++, and Java.
+        This multimodal and multilingual focus enhances interpretability, robustness, and real-world practicality.
+      </p>
+
+      <h3>Research Statement</h3>
+      <p>
+        My research is driven by the goal of ensuring the safe and responsible use of LLMs through interpretable techniques for content detection.
+        As LLMs expand across domains, risks like misinformation, academic ethics violations, and plagiarism must be addressed.
+      </p>
+      <p>
+        <span class="label">Linguistic feature-based detection:</span><br>
+        I extract features such as word spacing, part-of-speech (POS) n-grams, and comma usage in text, and naming convention consistency or indentation in code. These features are then used in interpretable classifiers.
+      </p>
+      <p>
+        <span class="label">LLM watermarking:</span><br>
+        I design both zero-bit and multi-bit watermarking schemes that encode signals into generation outputs for origin identification and metadata recovery, while maintaining content fluency.
+      </p>
+      <p>
+        My contributions span natural language and source code, validated across English and Korean, supporting the broader vision of trustworthy and safe generative AI.
+      </p>
+
+      <h3>Research Projects</h3>
+      <ul>
+        <li><span class="label">AI for Issue-Fact Mapping (2021–2022):</span><br>
+          Knowledge graph entity retrieval from unstructured text using topic modeling.</li>
+        <li><span class="label">Medical Text Mining (2022–2024):</span><br>
+          Clinical insight extraction from medical records using topic modeling.</li>
+        <li><span class="label">Human-AI Programming Lab (2023–2025):</span><br>
+          Code search, QA, and time complexity prediction for collaborative coding systems.</li>
+        <li><span class="label">LLM for Math Categorization (2025):</span><br>
+          Difficulty/type prediction for math problems using LLMs.</li>
+      </ul>
+
+      <h3>Entrepreneurial Experience</h3>
+      <ul>
+        <li><span class="label">AI Campus Startup (Spring 2024):</span><br>
+          Founder & Project Lead — AI-generated graduation albums using Stable Diffusion.</li>
+        <li><span class="label">LLM-Driven Edu-Tech (Fall 2025):</span><br>
+          PI — CSAT question generator using LLM pipelines.</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li><span class="label">Programming:</span> Python, Java, C, C++, Bash</li>
+        <li><span class="label">ML Frameworks:</span> PyTorch, scikit-learn, Hugging Face</li>
+        <li><span class="label">NLP:</span> spaCy, NLTK, KoNLPy</li>
+        <li><span class="label">LLM APIs:</span> OpenAI API, Gemini API, Ollama</li>
+        <li><span class="label">Data Analysis:</span> pandas, NumPy, SciPy</li>
+        <li><span class="label">Visualization:</span> Matplotlib, Seaborn</li>
+        <li><span class="label">Version Control:</span> Git</li>
+        <li><span class="label">Writing:</span> LaTeX</li>
+        <li><span class="label">Languages:</span> Korean (native), English (fluent)</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

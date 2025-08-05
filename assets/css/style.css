@@ -1,0 +1,133 @@
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.65;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-right: 1px solid #dee2e6;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.sidebar nav {
+  margin-top: 2rem;
+}
+
+.sidebar nav a {
+  display: block;
+  text-decoration: none;
+  color: #212529;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar nav a:hover {
+  color: #0b5ed7;
+  font-weight: 500;
+}
+
+/* 본문 영역 */
+.main {
+  flex: 1;
+  padding: 2.5rem 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0d6efd;
+  border-bottom: 2px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.section p,
+.section li {
+  font-size: 0.97rem;
+  color: #333;
+}
+
+.section ul {
+  padding-left: 1.2em;
+  margin-top: 0.5em;
+}
+
+.section li {
+  margin-bottom: 1em;
+}
+
+/* 논문 리스트 */
+ul.publication-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+ul.publication-list li {
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+/* 링크 */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 강조 라벨 */
+.label {
+  font-weight: 600;
+  color: #444;
+}

@@ -93,38 +93,76 @@
 
       <h3>Research Interests</h3>
       <p>
-        My research focuses on enhancing the safety and transparency of large language models (LLMs) by developing robust methods for detecting LLM-generated text and code.
-        I have explored both linguistic/stylistic feature-based detection and watermarking techniques—two complementary approaches that enable accurate and imperceptible attribution of LLM outputs.
-        These methods have been applied to a wide range of content types, including natural language (in both English and Korean) and programming language (in Python, C, C++, and Java), demonstrating strong multilingual and multimodal generalization.
-        Through these experiences, I have cultivated a deep interest in AI safety and AI ethics, particularly in building trustworthy and accountable systems for generative AI.
+        My research focuses on ensuring the <strong>safety, transparency, and accountability</strong> of large language models (LLMs) 
+        through <strong>detection</strong> and <strong>watermarking</strong> techniques. 
+        I develop multi-modal and multi-lingual systems that identify or trace LLM-generated content 
+        across <strong>natural language and source code</strong> domains.
       </p>
-
+      <p>
+        Specifically, I explore two complementary directions:
+        (1) <strong>linguistic and stylistic feature–based detection</strong>, which analyzes morphological, syntactic, and stylistic patterns to distinguish human- and LLM-generated text or code; and 
+        (2) <strong>LLM watermarking</strong>, which embeds imperceptible yet verifiable statistical or structural signals into generated outputs.
+      </p>
+      <p>
+        My recent works include <em>KatFishNet</em>, the first linguistic feature–based detector for Korean text; 
+        <em>LPcodedec</em>, a coding-style-driven detector for paraphrased code; 
+        <em>STELA</em>, a syntactic-predictability watermark enabling model-free detection; 
+        and <em>WaterMod</em>, a probability-balanced modular watermarking framework supporting multi-bit payloads.
+      </p>
+      <p>
+        Broadly, my goal is to build <strong>trustworthy generative systems</strong> that are interpretable, 
+        regulation-compliant, and resistant to misuse.
+      </p>
+      
       <h3>Research Summary</h3>
       <p>
-        My research aims to promote the safe and responsible use of LLMs by developing reliable methods for detecting LLM-generated text and code.
-        I pursue two complementary directions: (1) linguistic/stylistic feature-based detection, which analyzes differences in text/code patterns between human- and LLM-authored text/code,
-        and (2) LLM watermarking, which embeds imperceptible but detectable signals during the generation process.
+        My research aims to promote <strong>responsible and verifiable AI generation</strong> by developing reliable methods for detecting and attributing LLM-generated text and code.
+        I pursue two main directions that mutually reinforce each other:
       </p>
+      <ul>
+        <li>
+          <strong>Linguistic/Stylistic Feature-based Detection:</strong> 
+          Models such as <em>KatFishNet</em> and <em>LPcodedec</em> analyze linguistic or coding-style cues—word spacing, part-of-speech diversity, punctuation patterns, naming and indentation consistency—to capture distributional differences between human and LLM authors.
+        </li>
+        <li>
+          <strong>LLM Watermarking:</strong> 
+          Frameworks such as <em>STELA</em> and <em>WaterMod</em> embed imperceptible signals during generation using linguistically or probabilistically adaptive mechanisms,
+          enabling <em>publicly verifiable</em> and <em>multi-bit</em> attribution without harming fluency.
+        </li>
+      </ul>
       <p>
-        I apply both methods to natural language and source code, validating across English, Korean, Python, C, C++, and Java.
-        This multimodal and multilingual focus enhances interpretability, robustness, and real-world practicality.
+        These systems demonstrate strong <strong>multilingual</strong> (English, Korean) and <strong>multimodal</strong> (text + code) generalization,
+        advancing interpretable and regulation-aligned AI provenance research.
       </p>
-
+      
       <h3>Research Statement</h3>
       <p>
-        My research is driven by the goal of ensuring the safe and responsible use of LLMs through interpretable techniques for LLM-generated text and code detection.
+        My long-term research vision is to establish a <strong>unified framework for provenance-aware and interpretable AI</strong> 
+        that spans both language and programming modalities.
+        To achieve this, I combine linguistic insight, statistical modeling, and watermark design to construct transparent interfaces 
+        between human communication and generative models.
       </p>
+      
       <p>
-        <span class="label">Linguistic/Stylistic feature-based detection:</span><br>
-        I extract features such as word spacing, part-of-speech (POS) n-grams, and comma usage in text, and naming convention consistency or indentation in code. These features are then used in lightweight classifiers.
+        <span class="label">Linguistic / Stylistic Feature-based Detection:</span><br>
+        My work on <em>KatFishNet</em> introduces the first benchmark and detector for LLM-generated Korean text, 
+        leveraging word-spacing irregularities, POS n-gram diversity, and comma usage to expose cross-morphological differences between human and machine writing.
+        Extending this idea to source code, <em>LPcodedec</em> identifies LLM-paraphrased code by quantifying coding-style features such as naming consistency, indentation regularity, and comment ratio.
       </p>
+      
       <p>
-        <span class="label">LLM watermarking:</span><br>
-        I design both zero-bit and multi-bit watermarking schemes that encode signals into generation outputs for origin identification and metadata recovery, while maintaining content fluency.
+        <span class="label">LLM Watermarking:</span><br>
+        My research advances from distribution-based watermarking to <strong>linguistically adaptive</strong> and <strong>probability-balanced</strong> methods.
+        <em>STELA</em> modulates watermark strength according to syntactic predictability modeled by POS n-gram entropy, enabling <em>model-free</em> public detection.
+        <em>WaterMod</em> generalizes this concept through modular token-rank partitioning that guarantees at least one high-probability token per class,
+        supporting <em>zero-bit</em> and <em>multi-bit</em> watermarking with minimal quality loss.
       </p>
+      
       <p>
-        My contributions span natural language and source code, validated across English and Korean, supporting the broader vision of trustworthy and safe generative AI.
+        Together, these studies form a coherent agenda for <strong>trustworthy and interpretable generative AI</strong>, 
+        bridging linguistic analysis and information-theoretic watermark design to meet emerging transparency and safety requirements.
       </p>
+      
 
       <h3>Research Projects</h3>
       <ul>
@@ -141,7 +179,7 @@
       <h3>Skills</h3>
       <ul>
         <li><span class="label">Programming:</span> Python, Java, C, C++, Bash</li>
-        <li><span class="label">ML Frameworks:</span> PyTorch, scikit-learn, Hugging Face</li>
+        <li><span class="label">ML Frameworks:</span> PyTorch, scikit-learn, Hugging Face Transformers</li>
         <li><span class="label">NLP:</span> SpaCy, NLTK, KoNLPy, KiwiPiePy</li>
         <li><span class="label">LLM APIs:</span> OpenAI API, Gemini API, Ollama</li>
         <li><span class="label">Data Analysis:</span> Pandas, NumPy, SciPy</li>
